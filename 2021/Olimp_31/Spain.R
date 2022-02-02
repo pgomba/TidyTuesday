@@ -23,14 +23,14 @@ ggplot(spa2,aes(x=year,y=count))+
   scale_fill_manual(values = c("#FFD700","#C0C0C0","#CD7F32" ))+
   theme_classic()+
   labs(x="Year",y="Medals",subtitle="Spain Olympic Medals/Year")+
-  ggflags::geom_flag(y=20,x=1.5,country="es",size=10)+
+  #ggflags::geom_flag(y=20,x=1.5,country="es",size=10)+
   theme(text=element_text(size=18),
         axis.text.x=element_text(angle=60,hjust=1),
         legend.title = element_blank())+
-  geom_curve2(aes(x = 20, xend = 22, y = 21, yend = 20), color = "black", curvature = -0.3)+
+  geom_curve2(aes(x = 20, xend = 23, y = 21, yend = 20), color = "black", curvature = -0.3)+
   annotate("text",x = 18, y = 21,label="Barcelona", color = "black",size=5)+
-  geom_segment(aes(x=2.8,y=0.5,xend=5.2,yend=0.5),size=3,colour="red")+
-  geom_segment(aes(x=6.8,y=0.5,xend=7.2,yend=0.5),size=3,colour="red")+
+  geom_segment(aes(x=2.8,y=0.5,xend=6.2,yend=0.5),size=3,colour="red")+
+  geom_segment(aes(x=7.8,y=0.5,xend=8.2,yend=0.5),size=3,colour="red")+
   theme(legend.position = c(.25,.75),legend.direction="vertical")+
   annotate("text",x = 10, y = 12.5,label="No participation", color = "black",size=5)+
   geom_segment(aes(x=6,y=12.3,xend=6.5,yend=12.3),size=3,colour="red")
