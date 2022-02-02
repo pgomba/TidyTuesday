@@ -40,4 +40,4 @@ ggplot(MvsR,aes(x=writer,y=rating,colour=rating))+
   annotate("text",x = 2.1, y = 93.5,label="Forest of the Dead", color = "black",size=3)+
   labs(y="Ratings",x="Writer",caption=expression(atop("Russel T Davies (31 episodes) vs S. Moffat (48 episodes)")))
 
-ggsave("2021/drWho_48/drwho.jpg")
+ggsave("2021/drWho_48/plots/drwho.jpg")
