@@ -19,8 +19,9 @@ caption<-"Source: doi:10.1111/acv.12563 \ndoi:10.5441/001/1.pf315732"
 ggplot(df, aes(x=kill_ratio,y=y))+
   geom_image(aes(image=image,color=animal_sex), size=.09)+
   geom_text_repel(data=df%>%head(10),aes(label=animal_id),color="white",bg.color = "grey30",bg.r = 0.1,nudge_x = .01)+
-  labs(x="Kills/h outdoor",y="",title = "UK - Outdoor cat killing efficiency",
-       caption=caption,color="Sex")+
+  labs(x="Kills /per hour outdoor",y="",title = "UK Outdoor cats killing efficiency",
+       caption=caption,color="Sex",
+       subtitle = "#TidyTuesday. 2023 Week 5. @pagomba")+
   theme_classic()+
   scale_x_continuous(limits = c(0,0.09))+
   theme(text=element_text(size=18),
@@ -34,7 +35,8 @@ ggplot(df, aes(x=kill_ratio,y=y))+
         legend.position = c(.90, .90),
         legend.background = element_rect(fill = "#272822"),
         text=element_text(size=16,color = "white"),
+        plot.subtitle = element_text(size=12,color = "white"),
         panel.background = element_rect(fill = "#272822"),
         plot.background = element_rect(fill = "#272822"))
  
-ggsave("cats_uk.png")
+ggsave("2023/w5_cats/cats_uk.png")
