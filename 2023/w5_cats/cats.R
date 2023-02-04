@@ -20,7 +20,7 @@ caption<-"Source: doi:10.1111/acv.12563 \ndoi:10.5441/001/1.pf315732"
 ggplot(df, aes(x=kill_ratio,y=y))+
   geom_image(aes(image=image,color=animal_sex),size=.15)+
   geom_text_repel(data=df%>%head(10),aes(label=animal_id),color="white",bg.color = "grey30",bg.r = 0.1,nudge_x = .011,nudge_y = .1)+
-  labs(x="Kills /per hour outdoor",y="",title = "UK Outdoor cats killing efficiency",
+  labs(x="Kills/per hour outdoor",y="",title = "UK Outdoor cats killing efficiency",
        caption=caption,color="Sex",
        subtitle = "#TidyTuesday. 2023 Week 5. @pagomba")+
   theme_classic()+
