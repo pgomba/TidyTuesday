@@ -10,4 +10,4 @@ other countries plots [(here)](https://github.com/pgomba/TidyTuesday/tree/main/2
 ![Dr.Who](2021/w48_drWho/plots/drwho.jpg)
 # 2023
 ## Week 5 - Pet Cats UK [(code)](https://github.com/pgomba/TidyTuesday/tree/main/2023/w5_cats)
-![cats](2023/w5_cats/plots/cats_uk.png)
+![cats](2023/w5_cats/cats_uk.png)
