@@ -29,10 +29,11 @@ ggplot(test,aes(x=Release_Year,y=frequency))+
   scale_x_continuous(breaks = seq(2000,2024,4))+
   theme_void()+
   theme(plot.background =  element_rect(fill="#191919"),
-        text = element_text(family = "roboto",colour="white",size=60),
+        text = element_text(family = "roboto",colour="white",size=80),
         legend.direction = "horizontal",
         legend.position = "bottom",
-        axis.text.x = element_text(angle=90,colour="white")
+        axis.text.x = element_text(angle=90,colour="white",size=50,hjust=-2),
+        legend.text = element_text(angle=45,size=40)
         
         )+
   labs(fill="Frequency",

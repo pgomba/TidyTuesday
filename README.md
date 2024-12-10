@@ -2,7 +2,7 @@
 
 ## 2024
 
-### Week 50 - The scent of data (code)
+### Week 50 - The scent of data ([code](https://github.com/pgomba/TidyTuesday/blob/main/2024/w_50/perfumes.R))
 
 ![](2024/w_50/perfumes.png)
 
